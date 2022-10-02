@@ -12,6 +12,36 @@
   --color-light: rgb(194, 194, 194);
   --color-lighter: rgb(255, 255, 255);
   /* you could add an accent color for CTAs and anchor tags ;-) */
+
+  --ff-primary: "Syne", sans-serif;
+  --ff-secondary: "DM Sans", sans-serif;
+
+  --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-secondary);
+
+  --fs-100: 0.422rem;
+  --fs-200: 0.563rem;
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: 1.333rem;
+  --fs-600: 1.777rem;
+  --fs-700: 2.369rem;
+  --fs-800: 3.157rem;
+  --fs-900: 4.209rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+
+  --fw-black: 900;
+  --fw-extra-bold: 800;
+  --fw-bold: 700;
+  --fw-medium: 600;
+  --fw-semi-bold: 500;
+  --fw-regular: 400;
+  --fw-light: 300;
+  --fw-extra-light: 200;
+  --fw-thin: 100;
 }
 
 /* Fonts */
@@ -19,28 +49,72 @@ html {
   font-size: 18px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--color-darker);
+  font-family: var(--ff-heading);
 }
 
 h1 {
-
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold);
+  line-height: 4.5rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
-
+  font-size: var(--fs-800);
+  font-weight: var(--fw-semi-bold);
+  line-height: 3.5rem;
+  /* margin-bottom: 1rem; */
 }
 
 h3 {
-
+  font-size: var(--fs-500);
+  font-weight: var(--fw-regular);
+  line-height: 3rem;
 }
 
-p{
+p {
+  font-family: var(--ff-secondary);
   color: var(--color-dark);
+  font-size: var(--fs-400);
+  line-height: 1.8rem;
+  /* margin-bottom: 1rem; */
 }
 
+/* To select only the first h2 to adjust margin between form and text */
+.intro_text h2 {
+  margin-bottom: 2rem;
+}
+/* To select the second h2 to adjust margin between h2 and p */
+#cards h2 {
+  margin-bottom: 0.6rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+/* Adjusting card text spacing */
+.card > * {
+  line-height: 2rem;
+
+  /*   margin-bottom: 0.6rem;
+ */
+}
+
+.info_text p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+#contact h2 {
+  margin-bottom: 2rem;
+}
 /* UI Elements */
 button {
+  font-family: var(--ff-secondary);
   display: inline-block;
   height: 2rem;
   padding: 0.5rem 1rem;
@@ -56,7 +130,7 @@ button {
   color: var(--color-darker);
 }
 
-input[type=text] {
+input[type="text"] {
   box-sizing: border-box;
   width: 250px;
   height: 2rem;
@@ -68,7 +142,7 @@ input[type=text] {
 }
 
 /* Menu */
-nav{
+nav {
   display: flex;
   padding: 0.5rem;
   justify-content: space-between;
@@ -181,7 +255,8 @@ footer {
   background-color: var(--color-darker);
 }
 
-footer h2, footer h3{
+footer h2,
+footer h3 {
   color: var(--color-lighter);
 }
 

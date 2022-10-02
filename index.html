@@ -9,6 +9,9 @@
     <!-- Inspired by https://maze.co/podcast/ & https://www.insurely.com/ for educational purpose-->
     <!-- Lorem Ipsum from https://loremizr.monkeymatt.com/ -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
     <nav>
@@ -17,37 +20,38 @@
     </nav>
     <header>
       <div class="header_text">
-        <h1>Sed Felices Iure</h1>
-        <p>Per Infamia Erat et y mus laborum fames utergue tetnpore-montes, laborum id quo ea dis modi at Quos. Fuga ad est foveam praetensiones typi ducimus dolore te Partium, Restat, cum cras. Eodem exemplo modernas qui putabat, louor, eum proponendo lius mazim reprobo—quo est stipula fuga hic eventus sanguinis.</p>
+        <h1>Debt. Simplified.</h1>
+        <p>We help private equity firms and lenders streamline their debt financing process and portfolio management.</p>
       </div>
-      <div class="header_graphics">
-      </div>
+      <div class="header_graphics"></div>
     </header>
     <main>
       <section id="intro">
         <div class="intro_text">
-          <h2>Quo Fioniam Fuga buccis publicum videre mi est indirecte si medicus</h2>
-          <input type="text"></input><button type="button">Request Demo &#x2794;</button>
+          <h2>Built specifically for the private capital markets</h2>
+          <input type="text" aria-label="textLabel" /><button type="button">Request Demo &#x2794;</button>
         </div>
-        <div class="intro_graphics">
-        </div>
+        <div class="intro_graphics"></div>
       </section>
       <section id="cards">
-        <h2>Invasor Annuebat</h2>
-        <p>Invasor verius vestram quo opponat saepe dui mercenarius quo deputatos typi exuere justo duis ut orandum.</p>
+        <h2>Our Advisors</h2>
+        <p>Run more efficient processes. Differentiate in the marketplace. Save costs.</p>
         <section id="card_container"></section>
-      </section> 
+      </section>
       <section id="info">
         <div class="info_text">
-          <h2>Modi qui enim</h2>
-          <p>Per Lectus te p EX Scandala rem est velit Habent Neminern et Esse. Hac srripta saevire mazim ut convincere est rerum in amandi nam praesentis praesens. Est princeps kopenhagen nonnis foveam amplecti mi lacus possimus sint eum vel hominem magna. Non rudera m vero quis est iniuriis integrum, donec, triduo, sed massa autem.</p>
+          <h2>Mark Danzey says...</h2>
+          <p>
+            “Termgrid has helped us modernize our capital markets operations and has driven efficiencies in deal execution and portfolio management. The product is intuitive, easy to use and provides immediate value by automating some of the manual
+            and repetitive processes. Termgrid is built by a team that deeply understands the pain points of private capital markets.”
+          </p>
           <button type="button">Learn More &#x2794;</button>
         </div>
       </section>
       <section id="contact">
         <div>
-          <h2>Non Fioniam Enim peccat probitas eventu te leo innocuits in desinam</h2>
-          <input type="text"></input><button type="button">Request Demo &#x2794;</button>
+          <h2>End-to-end platform for private capital markets</h2>
+          <input type="text" aria-label="textLabel" /><button type="button">Request Demo &#x2794;</button>
         </div>
       </section>
     </main>
@@ -95,13 +99,13 @@
   </body>
   <template id="card_template">
     <div class="card">
-      <img class="card_image" />
+      <img class="card_image" alt="card" />
       <h3 class="card_name"></h3>
       <p class="card_slogan"></p>
       <p class="card_title"></p>
       <p class="card_mail"></p>
-      <input type="button" value="Remove" class="card_button_negative"/>
-      <input type="button" value="Accept" class="card_button_positive"/>
+      <input type="button" value="Remove" class="card_button_negative" />
+      <input type="button" value="Accept" class="card_button_positive" />
     </div>
   </template>
 </html>
