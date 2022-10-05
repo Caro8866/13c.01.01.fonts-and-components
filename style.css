@@ -130,6 +130,10 @@ button {
   color: var(--color-darker);
 }
 
+button:hover {
+  box-shadow: 5px 5px rgb(157, 150, 150);
+}
+
 input[type="text"] {
   box-sizing: border-box;
   width: 250px;
