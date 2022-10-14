@@ -84,7 +84,11 @@ p {
   line-height: 1.8rem;
   /* margin-bottom: 1rem; */
 }
-
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
 /* To select only the first h2 to adjust margin between form and text */
 .intro_text h2 {
   margin-bottom: 2rem;
@@ -214,6 +218,7 @@ header {
   background-color: var(--color-dark);
 }
 
+/*! CARDS */
 #cards {
   min-height: 80vh;
   padding: 5rem 2rem;
@@ -226,6 +231,32 @@ header {
   grid-gap: 1rem;
   justify-items: center;
 }
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card_image {
+  aspect-ratio: 1/1;
+  border-radius: 5% 5% 50% 5%;
+  width: 50%;
+}
+
+/*   <template id="card_template">
+    <div class="card">
+      < class="card_image" alt="card" />
+      <h3 class="card_name"></h3>
+      <p class="card_slogan"></p>
+      <p class="card_title"></p>
+      <p class="card_mail"></p>
+      <input type="button" value="Remove" class="card_button_negative" />
+      <input type="button" value="Accept" class="card_button_positive" />
+    </div>
+  </template>
+ */
 
 #info {
   display: flex;
