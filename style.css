@@ -7,11 +7,12 @@
 
 /* Color Properties */
 :root {
-  --color-darker: rgb(48, 48, 48);
-  --color-dark: rgb(64, 64, 64);
-  --color-normal: rgb(120, 120, 120);
-  --color-light: rgb(194, 194, 194);
-  --color-lighter: rgb(255, 255, 255);
+  --color-darker: #263238;
+  --color-dark: #3d464b;
+  --color-normal: #7e8d94;
+  --color-light: #d2dfe0;
+  --color-lighter: #fffef9;
+  --color-accent: #e9685c;
   /* you could add an accent color for CTAs and anchor tags ;-) */
 
   --ff-primary: "Syne", sans-serif;
@@ -126,17 +127,19 @@ button {
   border: none;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-darker);
+  background-color: var(--color-accent);
   color: var(--color-lighter);
 }
 
 .light_button {
-  background-color: var(--color-lighter);
-  color: var(--color-darker);
+  background-color: var(--color-accent);
+  color: var(--color-lighter);
 }
-
+.light_button:hover {
+  box-shadow: 5px 5px var(--color-light);
+}
 button:hover {
-  box-shadow: 5px 5px rgb(157, 150, 150);
+  box-shadow: 5px 5px var(--color-dark);
 }
 
 input[type="text"] {
@@ -239,7 +242,7 @@ header {
   width: 100%;
   background-color: var(--color-lighter);
   border-radius: 0.5rem;
-  box-shadow: 0 15px 30px -10px var(--color-light);
+  box-shadow: 0 15px 30px -10px rgb(218, 218, 218);
   justify-content: space-between;
   padding-bottom: 1rem;
   align-items: center;
@@ -316,7 +319,7 @@ header {
   padding-left: 2rem;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-light);
+  background-color: var(--color-accent);
 }
 
 .info_text {
@@ -344,13 +347,17 @@ footer {
 
 footer h2,
 footer h3 {
-  color: var(--color-lighter);
-}
-
-footer a {
   color: var(--color-light);
 }
 
+footer a {
+  color: var(--color-accent);
+  font-family: var(--ff-primary);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 footer section {
   display: flex;
   max-width: 50vw;
